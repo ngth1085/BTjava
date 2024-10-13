@@ -1,0 +1,20 @@
+public class testcricle {
+
+    public static void main(String[] args) {
+
+        cricle c1 = new cricle(1.1);
+        System.out.println(c1);
+        cricle c2 = new cricle(2.2);
+        System.out.println(c2);  // toString()
+        cricle c3 = new cricle();
+        System.out.println(c3);  // toString()
+
+        // Test Setters and Getters
+        c1.setRadius(2.2);
+        System.out.println(c1);  // toString() to inspect the modified instance
+        System.out.println("The radius is: " + c1.getRadius());
+
+        // Test getArea() and getCircumference()
+        System.out.printf("The area is: %.2f%n", c1.getArea());
+        System.out.printf("The circumference is: %.2f%n", c1.getCircumference());
+    }
